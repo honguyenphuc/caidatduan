@@ -1,9 +1,9 @@
 const express = require ("express");
 const contacts = require("../controllers/contact.controller");
 module.exports = (app) => {
-    const router = express. Router();
+    const router = express.Router();
    // Retrieve all contacts
-    router.get("/", contacts.findAl1);
+    router.get("/", contacts.findAll);
    // Create a new contact
     router.post("/", contacts.create);
     // Delete all contacts
